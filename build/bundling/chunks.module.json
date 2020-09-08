@@ -2,19 +2,19 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.1",
-  "hash": "9d5fdd0fcfe9a5636fd5",
+  "hash": "bf2d24cb99efd2dbaf74",
   "publicPath": "/static/",
   "outputPath": "/Users/matthewbert/Desktop/portfolio-blog/build/static",
   "assetsByChunkName": {
     "list": "list.module.js",
     "portfolio-blog": [
       "portfolio-blog.module.js",
-      "portfolio-blog.66c68c2d06fc760a1c8f.hot-update.js"
+      "portfolio-blog.73bd65552c0abcf81107.hot-update.js"
     ]
   },
   "assets": [
     {
-      "name": "66c68c2d06fc760a1c8f.hot-update.json",
+      "name": "73bd65552c0abcf81107.hot-update.json",
       "size": 56,
       "chunks": [],
       "chunkNames": [],
@@ -23,6 +23,15 @@
         "immutable": true
       },
       "emitted": false
+    },
+    {
+      "name": "images/matt.jpg",
+      "size": 718461,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false,
+      "isOverSizeLimit": true
     },
     {
       "name": "list.module.js",
@@ -37,8 +46,8 @@
       "emitted": false
     },
     {
-      "name": "portfolio-blog.66c68c2d06fc760a1c8f.hot-update.js",
-      "size": 84374,
+      "name": "portfolio-blog.73bd65552c0abcf81107.hot-update.js",
+      "size": 113530,
       "chunks": [
         "portfolio-blog"
       ],
@@ -53,7 +62,7 @@
     },
     {
       "name": "portfolio-blog.module.js",
-      "size": 9207802,
+      "size": 9237891,
       "chunks": [
         "portfolio-blog"
       ],
@@ -72,7 +81,7 @@
       ],
       "assets": [
         "portfolio-blog.module.js",
-        "portfolio-blog.66c68c2d06fc760a1c8f.hot-update.js"
+        "portfolio-blog.73bd65552c0abcf81107.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -85,7 +94,7 @@
       ],
       "assets": [
         "portfolio-blog.module.js",
-        "portfolio-blog.66c68c2d06fc760a1c8f.hot-update.js"
+        "portfolio-blog.73bd65552c0abcf81107.hot-update.js"
       ],
       "children": {},
       "childAssets": {}

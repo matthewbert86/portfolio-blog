@@ -3,6 +3,7 @@ import { connect, styled } from "frontity";
 import Link from "./link";
 import List from "./list";
 import FeaturedMedia from "./featured-media";
+import matt from "../images/matt.jpg";
 
 const Profile = ({ state, actions, libraries }) => {
   // Get information about the current URL.
@@ -32,11 +33,15 @@ const Profile = ({ state, actions, libraries }) => {
     <Container>
       <Headline>
         <HeadlineContent>
-          <h2>Hi, I'm Matt</h2>
-          <p>
-            A Web developer from the Tampa Bay area. I create wonderful websites
-            and apps, to help bring client ideas to life.
-          </p>
+          <Action>
+            <h2>Hi, I'm Matt</h2>
+            <p>
+              A Web developer from the Tampa Bay area. I create wonderful
+              websites and apps to help bring client ideas to life.
+            </p>
+            <button>Contact Me</button>
+          </Action>
+          <img src={matt} alt="Logo" />
         </HeadlineContent>
       </Headline>
       <div>
@@ -78,17 +83,93 @@ export default connect(Profile);
 
 const Headline = styled.div`
   background-color: #8ccbfc;
-  height: 350px;
+  height: 600px;
   width: 100%;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+
+  @media screen and (max-width: 800px) {
+    height: 650px;
+  }
 `;
 
 const HeadlineContent = styled.div`
-  width: 80%;
-  justify-content: center;
-  margin: 0 20%;
-  padding-top: 50px;
+width: 100%;
+box-sizing: border-box;
+padding: 40px 10px;
+margin: 0 10%;
+display: inline-block;
+flex-direction: column;
+justify-content: space-around;
+
+@media screen and (max-width: 800px) {
+  & {
+    width: auto;
+  }
+}
+
+img {
+  width: 30%;
+  margin-left: 5.8rem;
+  border-radius: 50%;
+
+  @media screen and (max-width: 800px) {
+    & {
+      width: 75%;
+      margin: 30px 0 0 50px;
+    }
+  }
+}
+
+button {
+  float: left;
+  background-color: #49aeba;
+  color: #fff;
+    padding: .575rem .95rem;
+    letter-spacing: var(--spacing);
+    display: inline-block;
+    font-weight: 500;
+    transition: var(--transition);
+    font-size: 1.575rem;
+    border: 2px solid transparent;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    border-radius: 10px;
+}
+
+button:hover {
+  background-color: #86e1ec;
+}
+
+p {
+  float: left;
+  font-size: 1.3rem;
+}
+
+h2 {
+  color: #102a42;
+  font-size: 3.7rem;
+  float: left;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  
+  @media screen and (max-width: 800px) {
+  & {
+    font-size: 1.5rem;
+  }
+}
+`;
+
+const Action = styled.div`
+  width: 40%;
+  margin: 0 30px;
+
+  @media screen and (max-width: 800px) {
+    & {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
 `;
 
 const Container = styled.div`
