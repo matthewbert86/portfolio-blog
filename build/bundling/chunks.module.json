@@ -1,0 +1,112 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.44.1",
+  "hash": "9d5fdd0fcfe9a5636fd5",
+  "publicPath": "/static/",
+  "outputPath": "/Users/matthewbert/Desktop/portfolio-blog/build/static",
+  "assetsByChunkName": {
+    "list": "list.module.js",
+    "portfolio-blog": [
+      "portfolio-blog.module.js",
+      "portfolio-blog.66c68c2d06fc760a1c8f.hot-update.js"
+    ]
+  },
+  "assets": [
+    {
+      "name": "66c68c2d06fc760a1c8f.hot-update.json",
+      "size": 56,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "list.module.js",
+      "size": 47797,
+      "chunks": [
+        "list"
+      ],
+      "chunkNames": [
+        "list"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "portfolio-blog.66c68c2d06fc760a1c8f.hot-update.js",
+      "size": 84374,
+      "chunks": [
+        "portfolio-blog"
+      ],
+      "chunkNames": [
+        "portfolio-blog"
+      ],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "portfolio-blog.module.js",
+      "size": 9207802,
+      "chunks": [
+        "portfolio-blog"
+      ],
+      "chunkNames": [
+        "portfolio-blog"
+      ],
+      "info": {},
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "portfolio-blog": {
+      "chunks": [
+        "portfolio-blog"
+      ],
+      "assets": [
+        "portfolio-blog.module.js",
+        "portfolio-blog.66c68c2d06fc760a1c8f.hot-update.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "portfolio-blog": {
+      "chunks": [
+        "portfolio-blog"
+      ],
+      "assets": [
+        "portfolio-blog.module.js",
+        "portfolio-blog.66c68c2d06fc760a1c8f.hot-update.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "list": {
+      "chunks": [
+        "list"
+      ],
+      "assets": [
+        "list.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 5,
+      "debug": false
+    }
+  },
+  "children": []
+}
