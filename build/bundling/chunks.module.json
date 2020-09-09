@@ -2,19 +2,19 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.1",
-  "hash": "852a65484862a882d440",
+  "hash": "49720fcbf7001e98036a",
   "publicPath": "/static/",
   "outputPath": "/Users/matthewbert/Desktop/portfolio-blog/build/static",
   "assetsByChunkName": {
     "list": "list.module.js",
     "portfolio-blog": [
       "portfolio-blog.module.js",
-      "portfolio-blog.7f57eccb973da096ddd6.hot-update.js"
+      "portfolio-blog.f618f4f6aa1b0c66643f.hot-update.js"
     ]
   },
   "assets": [
     {
-      "name": "7f57eccb973da096ddd6.hot-update.json",
+      "name": "f618f4f6aa1b0c66643f.hot-update.json",
       "size": 56,
       "chunks": [],
       "chunkNames": [],
@@ -22,6 +22,14 @@
         "hotModuleReplacement": true,
         "immutable": true
       },
+      "emitted": false
+    },
+    {
+      "name": "images/logo.png",
+      "size": 10412,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
       "emitted": false
     },
     {
@@ -46,8 +54,8 @@
       "emitted": false
     },
     {
-      "name": "portfolio-blog.7f57eccb973da096ddd6.hot-update.js",
-      "size": 115843,
+      "name": "portfolio-blog.f618f4f6aa1b0c66643f.hot-update.js",
+      "size": 137947,
       "chunks": [
         "portfolio-blog"
       ],
@@ -62,7 +70,7 @@
     },
     {
       "name": "portfolio-blog.module.js",
-      "size": 9240205,
+      "size": 9253399,
       "chunks": [
         "portfolio-blog"
       ],
@@ -81,7 +89,7 @@
       ],
       "assets": [
         "portfolio-blog.module.js",
-        "portfolio-blog.7f57eccb973da096ddd6.hot-update.js"
+        "portfolio-blog.f618f4f6aa1b0c66643f.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -94,7 +102,7 @@
       ],
       "assets": [
         "portfolio-blog.module.js",
-        "portfolio-blog.7f57eccb973da096ddd6.hot-update.js"
+        "portfolio-blog.f618f4f6aa1b0c66643f.hot-update.js"
       ],
       "children": {},
       "childAssets": {}

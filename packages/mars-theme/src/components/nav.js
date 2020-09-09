@@ -1,7 +1,7 @@
 import React from "react";
 import { connect, styled } from "frontity";
 import Link from "@frontity/components/link";
-import { FaDiscord, FaTwitterSquare, FaInstagramSquare } from "react-icons/fa";
+import logo from "../images/logo.png";
 
 /**
  * Navigation Component
@@ -11,7 +11,9 @@ import { FaDiscord, FaTwitterSquare, FaInstagramSquare } from "react-icons/fa";
 const Nav = ({ state }) => (
   <NavContainer>
     <StyledLink link="/">
-      <Title>{state.frontity.title}</Title>
+      <Title>
+        <img src={logo} alt="Logo" />
+      </Title>
     </StyledLink>
     {state.theme.menu.map(([name, link]) => {
       // Check if the link matched the current page url
@@ -27,17 +29,6 @@ const Nav = ({ state }) => (
         </Navigation>
       );
     })}
-    <Icons>
-      <a href="https://discord.gg/pz8NdeS">
-        <FaDiscord color="#2a5ee7" />
-      </a>
-      <a href="https://twitter.com/thementalgeek">
-        <FaTwitterSquare color="#34a1f2" />
-      </a>
-      <a href="https://www.instagram.com/mental_geek/">
-        <FaInstagramSquare color="#ea4d89" />
-      </a>
-    </Icons>
   </NavContainer>
 );
 
@@ -104,21 +95,9 @@ const NavItem = styled.div`
   }
 `;
 
-const Icons = styled.nav`
-  font-size: 25px;
-  padding: 20px 0 0 125px;
-  display: flex;
-
-  svg {
-    padding-right: 10px;
-  }
-  @media screen and (max-width: 1087px) {
-    display: none;
-  }
-`;
-
 const Navigation = styled.nav`
-  padding-left: 5px;
+  padding-top: 10px;
+  padding-left: 15px;
 
   @media screen and (max-width: 1087px) {
     display: none;

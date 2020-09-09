@@ -4,6 +4,7 @@ import Link from "./link";
 import List from "./list";
 import FeaturedMedia from "./featured-media";
 import matt from "../images/matt.jpg";
+import { FaLinkedin, FaTwitterSquare, FaInstagramSquare } from "react-icons/fa";
 
 const Profile = ({ state, actions, libraries }) => {
   // Get information about the current URL.
@@ -34,12 +35,27 @@ const Profile = ({ state, actions, libraries }) => {
       <Headline>
         <HeadlineContent>
           <Action>
-            <h2>Hi, I'm Matt</h2>
-            <p>
-              A Web developer from the Tampa Bay area. I create wonderful
-              websites and apps to help bring client ideas to life.
-            </p>
-            <button>Contact Me</button>
+            <div>
+              <h2>Hi, I'm Matt</h2>
+              <p>
+                A Web developer from the Tampa Bay area. I create wonderful
+                websites and apps to help bring client ideas to life.
+                <div className="contact-btn">
+                  <button>Contact Me</button>
+                </div>
+                <div className="icons">
+                  <a href="https://www.linkedin.com/in/mbert1986/">
+                    <FaLinkedin color="#102a42" />
+                  </a>
+                  <a href="https://twitter.com/thementalgeek">
+                    <FaTwitterSquare color="#102a42" />
+                  </a>
+                  <a href="https://www.instagram.com/mental_geek/">
+                    <FaInstagramSquare color="#102a42" />
+                  </a>
+                </div>
+              </p>
+            </div>
           </Action>
           <img src={matt} alt="Logo" />
         </HeadlineContent>
@@ -83,7 +99,7 @@ export default connect(Profile);
 
 const Headline = styled.div`
   background-color: #8ccbfc;
-  height: 600px;
+  height: 560px;
   width: 100%;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
@@ -94,76 +110,102 @@ const Headline = styled.div`
 `;
 
 const HeadlineContent = styled.div`
-
-box-sizing: border-box;
-padding: 40px 0;
-margin: 0 10%;
-display: inline-block;
-flex-direction: column;
-justify-content: space-around;
-
-@media screen and (max-width: 800px) {
-  & {
-    width: auto;
-  }
-}
-
-img {
-  width: 32%;
-  margin-left: 5.8rem;
-  border-radius: 50%;
+  box-sizing: border-box;
+  padding: 40px 0;
+  margin: 0 10%;
+  display: inline-block;
+  flex-direction: column;
+  justify-content: space-around;
 
   @media screen and (max-width: 800px) {
     & {
-      width: 75%;
-      margin: 30px 0 0 50px;
+      width: auto;
     }
   }
-}
 
-button {
-  float: left;
-  background-color: #49aeba;
-  color: #fff;
-    padding: .575rem .95rem;
-    letter-spacing: var(--spacing);
-    display: inline-block;
-    font-weight: 500;
-    transition: var(--transition);
-    font-size: 1.575rem;
-    border: 2px solid transparent;
-    cursor: pointer;
-    box-shadow: 0 1px 3px rgba(0,0,0,.2);
-    border-radius: 10px;
-}
+  img {
+    width: 32%;
+    margin-left: 5.8rem;
+    border-radius: 50%;
 
-button:hover {
-  background-color: #86e1ec;
-}
-
-p {
-  float: left;
-  font-size: 1.3rem;
-  color: #102a42;
-}
-
-h2 {
-  color: #102a42;
-  font-size: 3.7rem;
-  float: left;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  
-  @media screen and (max-width: 800px) {
-  & {
-    font-size: 1.5rem;
+    @media screen and (max-width: 800px) {
+      & {
+        width: 75%;
+        margin: 30px 0 0 50px;
+      }
+    }
   }
-}
 `;
 
 const Action = styled.div`
   width: 55%;
   margin: 0 30px 0 0;
+  @media screen and (max-width: 800px) {
+    & {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+
+  button {
+    float: left;
+    background-color: #49aeba;
+    color: #fff;
+      padding: .575rem .95rem;
+      letter-spacing: var(--spacing);
+      display: inline-block;
+      font-weight: 500;
+      transition: var(--transition);
+      font-size: 1.575rem;
+      border: 2px solid transparent;
+      cursor: pointer;
+      box-shadow: 0 1px 3px rgba(0,0,0,.2);
+      border-radius: 10px;
+      
+    }
+  
+  button:hover {
+    background-color: #86e1ec;
+  }
+  
+  p {
+    float: left;
+    font-size: 1.3rem;
+    color: #102a42;
+  }
+  
+  .contact-btn {
+    padding-top: 20px;
+    margin: 0 auto;
+  }
+
+  .icons {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 35px;
+    padding: 20px 0 0 0;
+    display: flex;
+    float: left;
+      svg {
+        padding-right: 28px;
+      }
+    @media screen and (max-width: 1087px) {
+      }
+  }
+  
+  h2 {
+    color: #102a42;
+    font-size: 3.7rem;
+    float: left;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    
+    @media screen and (max-width: 800px) {
+    & {
+      font-size: 1.5rem;
+    }
+  }
 
   @media screen and (max-width: 800px) {
     & {
@@ -172,6 +214,18 @@ const Action = styled.div`
     }
   }
 `;
+
+/*const Icons = styled.div`
+  font-size: 35px;
+  padding: 2px 0 0 0;
+  display: inline-block;
+  float: left;
+  svg {
+    padding-right: 28px;
+  }
+  @media screen and (max-width: 1087px) {
+  }
+`;*/
 
 const Container = styled.div`
   width: 100%;
