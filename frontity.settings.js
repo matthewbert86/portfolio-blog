@@ -13,10 +13,11 @@ const settings = {
       state: {
         theme: {
           menu: [
-            ["Home", "/"],
+            ["About", "/about"],
             ["Blog", "/blog/"],
             ["Portfolio", "/portfolio/"],
-            ["Contact", "/contact/"]
+            ["Contact", "/contact/"],
+            ["Home", "/"]
           ],
           featured: {
             showOnList: true,

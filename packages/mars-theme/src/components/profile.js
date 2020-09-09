@@ -88,15 +88,15 @@ const Headline = styled.div`
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
 
-  @media screen and (max-width: 800px) {
-    height: 650px;
+  @media screen and (max-width: 900px) {
+    height: 700px;
   }
 `;
 
 const HeadlineContent = styled.div`
-width: 100%;
+
 box-sizing: border-box;
-padding: 40px 10px;
+padding: 40px 0;
 margin: 0 10%;
 display: inline-block;
 flex-direction: column;
@@ -109,7 +109,7 @@ justify-content: space-around;
 }
 
 img {
-  width: 30%;
+  width: 32%;
   margin-left: 5.8rem;
   border-radius: 50%;
 
@@ -144,6 +144,7 @@ button:hover {
 p {
   float: left;
   font-size: 1.3rem;
+  color: #102a42;
 }
 
 h2 {
@@ -161,8 +162,8 @@ h2 {
 `;
 
 const Action = styled.div`
-  width: 40%;
-  margin: 0 30px;
+  width: 55%;
+  margin: 0 30px 0 0;
 
   @media screen and (max-width: 800px) {
     & {
@@ -224,21 +225,6 @@ const Content = styled.div`
     object-position: center;
   }
 
-  figure {
-    margin: 24px auto;
-    /* next line overrides an inline style of the figure element. */
-    width: 100% !important;
-
-    figcaption {
-      font-size: 0.7em;
-    }
-  }
-
-  iframe {
-    display: block;
-    margin: auto;
-  }
-
   blockquote {
     margin: 16px 0;
     background-color: rgba(0, 0, 0, 0.1);
@@ -249,6 +235,33 @@ const Content = styled.div`
   a {
     color: rgb(31, 56, 197);
     text-decoration: underline;
+  }
+
+  .wp-block-column {
+    display: inline-block;
+    width: 50%;
+    @media screen and (max-width: 800px) {
+      & {
+        width: 75%;
+        margin: 5%;
+      }
+  }
+    p {
+      padding: 0;
+    }
+
+    .wp-block-image {
+      width: 500px;
+
+      @media screen and (max-width: 800px) {
+        & {
+          width: 100%;
+        }
+    }
+  }
+
+  .column-2 {
+    width: 30%;
   }
 
   /* Input fields styles */

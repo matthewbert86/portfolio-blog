@@ -72,7 +72,7 @@ const Title = styled.nav`
 const NavItem = styled.div`
   padding: 10px 5px 0 5px;
   margin: 0 16px;
-  color: #3d4f7a;
+  color: #343a40;
   font-size: 1.4em;
 
   box-sizing: border-box;
